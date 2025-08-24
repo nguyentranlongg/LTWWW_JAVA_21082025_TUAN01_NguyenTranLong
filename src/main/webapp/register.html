@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng ký</title>
+</head>
+<body>
+<h2>Form Đăng ký</h2>
+<form action="/register" method="post">
+    Username: <input type="text" name="username" required><br><br>
+    Password: <input type="password" name="password" required><br><br>
+    Email: <input type="email" name="email" required><br><br>
+
+    Giới tính:
+    <select name="gender" required>
+        <option value="">--Chọn giới tính--</option>
+        <option value="Nam">Nam</option>
+        <option value="Nữ">Nữ</option>
+        <option value="Khác">Khác</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Đăng ký</button>
+</form>
+</body>
+</html>

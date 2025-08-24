@@ -4,28 +4,23 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
 
-        <!-- Khai báo context-param (toàn cục) -->
-        <context-param>
-            <param-name>appName</param-name>
-            <param-value>Demo Servlet App</param-value>
-        </context-param>
+    <context-param>
+        <param-name>appName</param-name>
+        <param-value>Demo Servlet App</param-value>
+    </context-param>
 
-        <!-- Khai báo servlet -->
-        <servlet>
-            <servlet-name>Bai4</servlet-name>
-            <servlet-class>iuh.fit.se.Baitaptuan1.Bai4</servlet-class>
+    <servlet>
+        <servlet-name>Bai4</servlet-name>
+        <servlet-class>iuh.fit.se.Baitaptuan1.Bai4</servlet-class>
 
-            <!-- init-param cho riêng servlet này -->
-            <init-param>
-                <param-name>author</param-name>
-                <param-value>Nguyen Tran Long</param-value>
-            </init-param>
-        </servlet>
+        <init-param>
+            <param-name>author</param-name>
+            <param-value>Nguyen Tran Long</param-value>
+        </init-param>
+    </servlet>
 
-        <servlet-mapping>
-            <servlet-name>Bai4</servlet-name>
-            <url-pattern>/config</url-pattern>
-        </servlet-mapping>
-
-
+    <servlet-mapping>
+        <servlet-name>Bai4</servlet-name>
+        <url-pattern>/config</url-pattern>
+    </servlet-mapping>
 </web-app>
